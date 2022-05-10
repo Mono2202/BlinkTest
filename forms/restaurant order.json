@@ -1,0 +1,37 @@
+{
+    "form_name": "restaurant order",
+    "questions":
+    {
+        "dish": "Choose a dish (pizza / hamburger): [M]",
+        "toppings": {
+            "needed_fields": ["dish"],
+            "dish": {
+                "hamburger": "Choose hamburger toppings: [O]",
+                "pizza": "Choose pizza toppings: [O]"
+            }
+        },
+        "cooking_level": {
+            "needed_fields": ["dish"],
+            "dish": {
+                "hamburger": "Choose cooking level: [M]"
+            }
+        }
+    },
+
+    "answers":
+    {
+        "dish": ["pizza", "hamburger"],
+        "toppings": {
+            "dish": {
+                "hamburger": ["pickles", "lettuce", "onions"],
+                "pizza": ["olives", "tomatoes"]
+            }
+        },
+        "cooking_level": {
+            "dish": {
+                "hamburger": ["M", "MW", "WD"]
+            }
+        }
+    }
+
+}
